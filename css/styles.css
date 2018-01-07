@@ -1,0 +1,21 @@
+body {
+  background-color: #19053A;
+}
+
+.container {
+  background: #FFEACC;
+  box-shadow: 0 2px 2px #4A2D74;
+  color: #111;
+  max-width: 500px;
+  width: 100%;
+  margin: 3em auto;
+  padding: 3em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  position: relative;
+  border-radius: 15px;
+}
+
+form {
+  max-width: 400px;
+  padding: 0.5em;
+}
