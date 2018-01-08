@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="../css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
+  <title>Megaband Payment</title>
+</head>
+<body>
+  <div class="container">
+    <h4>Megaband Registration (payment)</h4>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="WEUKNYLNFN4EY">
+
+      <table>
+        <tr><td><input type="hidden" name="on1" value="Name">Name (should match registration form)</td></tr>
+        <tr><td><input type="text" name="os1" id="name" maxlength="200" autofocus=true required=true></td></tr>
+      </table>
+
+      <table>
+        <tr><td>There is a two ticket limit per purchaser.</td></tr>
+        <tr><td>How many tickets are you buying?
+        <input type="number" name="quantity" id="ticketQuantity" value=1 min=1 max=2></td></tr>
+      </table>
+
+      <table>
+        <tr><td>There is a sliding scale admission for this event.</td></tr>
+        <tr><td><input type="hidden" name="on0" id="ticketSlidingScale" value="How much can you pay?">How much can you pay?</td></tr><tr><td><select name="os0">
+          <option value="25">$25 per ticket</option>
+        	<option value="20">$20 per ticket</option>
+        	<option value="15">$15 per ticket</option>
+        	<option value="10">$10 per ticket</option>
+        </select> </td></tr>
+      </table>
+
+      <div id="total" style="display:none">
+        <p><strong>You are buying <span id="totalTicketQuantity">1</span> ticket(s) for $<span id="perTicketCost">25</span> each.</strong></p>
+      </div>
+
+      <input type="hidden" name="currency_code" value="USD">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" id="submit" alt="Buy Now">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+  </div>
+</body>
+</html>

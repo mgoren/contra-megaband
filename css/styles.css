@@ -19,3 +19,17 @@ form {
   max-width: 400px;
   padding: 0.5em;
 }
+
+table {
+  margin-bottom: 20px;
+}
+
+#name {
+  width: 350px;
+}
+
+#total {
+  display: none;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
