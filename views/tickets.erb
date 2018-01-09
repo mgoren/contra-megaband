@@ -8,35 +8,45 @@
   <title>Megaband Payment</title>
 </head>
 <body>
-  <div class="container">
-    <h4>Megaband Registration (payment)</h4>
+  <div class="myContainer">
+    <h4>Megaband Payment</h4>
+
+    <hr>
+    <div class="well">
+      <p>Information below should match what you entered on the previous page.</p>
+    </div>
+    <hr>
+
     <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
       <input type="hidden" name="cmd" value="_s-xclick">
       <input type="hidden" name="hosted_button_id" value="WEUKNYLNFN4EY">
 
       <table>
-        <tr><td><input type="hidden" name="on1" value="Name">Name (should match registration form)</td></tr>
+        <tr><td><input type="hidden" name="on1" value="Name">Name for 1st ticket</td></tr>
         <tr><td><input type="text" name="os1" id="name" maxlength="200" autofocus=true required=true></td></tr>
       </table>
 
       <table>
-        <tr><td>There is a two ticket limit per purchaser.</td></tr>
-        <tr><td>How many tickets are you buying?
-        <input type="number" name="quantity" id="ticketQuantity" value=1 min=1 max=2></td></tr>
+        <tr><td>How many tickets are you buying (1-4)?
+        <input type="number" name="quantity" id="ticketQuantity" value=1 min=1 max=4></td></tr>
       </table>
 
       <table>
-        <tr><td>There is a sliding scale admission for this event.</td></tr>
-        <tr><td><input type="hidden" name="on0" id="ticketSlidingScale" value="How much can you pay?">How much can you pay?</td></tr><tr><td><select name="os0">
-          <option value="25">$25 per ticket</option>
-        	<option value="20">$20 per ticket</option>
-        	<option value="15">$15 per ticket</option>
-        	<option value="10">$10 per ticket</option>
-        </select> </td></tr>
+        <tr><td><input type="hidden" name="on0" id="ticketSlidingScale" value="How much are you paying per ticket?">How much are you paying per ticket?</td></tr>
+        <tr><td>
+          <select name="os0">
+            <option value="25">$25 per ticket</option>
+          	<option value="20">$20 per ticket</option>
+          	<option value="15">$15 per ticket</option>
+          	<option value="10">$10 per ticket</option>
+          </select>
+        </td></tr>
       </table>
 
       <div id="total" style="display:none">
         <p><strong>You are buying <span id="totalTicketQuantity">1</span> ticket(s) for $<span id="perTicketCost">25</span> each.</strong></p>
+        <hr>
+        <p>After entering the information above, click the Buy Now button below.
       </div>
 
       <input type="hidden" name="currency_code" value="USD">

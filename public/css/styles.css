@@ -1,8 +1,9 @@
 body {
   background-color: #19053A;
+  font-family: Arial, san-serif;
 }
 
-.container {
+.myContainer {
   background: #FFEACC;
   box-shadow: 0 2px 2px #4A2D74;
   color: #111;
