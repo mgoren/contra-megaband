@@ -3,26 +3,38 @@
 <head>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" type="text/css">
   <link href="../css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="../js/scripts.js"></script>
   <title>Megaband T-shirts</title>
 </head>
 <body>
   <div class="myContainer">
+
     <h4>Megaband T-shirt Order Form</h4>
+    <hr>
+
+    <figure>
+      <img src="/images/megaband_shirt_2018.jpg" width="300"></img>
+      <figcaption>Megaband 2018 T-shirt Design</figcaption>
+    </figure>
+    <p><strong>All t-shirts must be picked up at the dance.</strong></p>
+
+    <table>
+      <tr><td><input type="hidden" name="on1" value="Name">Name</td></tr>
+      <tr><td><input type="text" id="nameInput" maxlength="200" autofocus=true></td></tr>
+    </table>
+
 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
-
-      <table>
-        <tr><td><input type="hidden" name="on1" value="Name">Name</td></tr>
-        <tr><td><input type="text" name="os1" id="name" maxlength="200" autofocus=true></td></tr>
-      </table>
-
     	<label>T-shirt (XS)</label>
-			<input type="hidden" name="cmd" value="_s-xclick">
+			<input type="hidden" name="os1" class="name">
+      <input type="hidden" name="cmd" value="_s-xclick">
 			<input type="hidden" name="hosted_button_id" value="SWZ6QN7PHHJV4">
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="Add to cart">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 		</form>
 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<label>T-shirt (S)</label>
+      <input type="hidden" name="os1" class="name">
 			<input type="hidden" name="cmd" value="_s-xclick">
 			<input type="hidden" name="hosted_button_id" value="MCFNMV37RJVL6">
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="Add to cart">
@@ -30,11 +42,31 @@
 		</form>
 		<form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
 			<label>T-shirt (M)</label>
+      <input type="hidden" name="os1" class="name">
 			<input type="hidden" name="cmd" value="_s-xclick">
 			<input type="hidden" name="hosted_button_id" value="3N9QDF82DXW4A">
 			<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="Add to cart">
 			<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
 		</form>
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <label>T-shirt (L)</label>
+      <input type="hidden" name="os1" class="name">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="ZSNRUXNQCVDXL">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="Add to cart">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
+    <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
+      <label>T-shirt (XL)</label>
+      <input type="hidden" name="os1" class="name">
+      <input type="hidden" name="cmd" value="_s-xclick">
+      <input type="hidden" name="hosted_button_id" value="GGBZZ4Z7EJFVE">
+      <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_SM.gif" border="0" name="submit" alt="Add to cart">
+      <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+    </form>
+
 
     <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
       <input type="hidden" name="cmd" value="_s-xclick">

@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   $("select").on('change', function() {
     $("#perTicketCost").text(this.value);
-  })
+  });
 
   $(".input-size").change(function(event) {
     var quantityTotal = calculateTotalQuantity();
@@ -17,6 +17,11 @@ $(document).ready(function() {
     $("input#amount").val(costTotal);
     $("#totalCost").text(costTotal);
     $("#totalQuantity").text(quantityTotal);
+  });
+
+  // t-shirts
+  $("#nameInput").on('change', function() {
+    $(".name").val($(this).val());
   });
 });
 
