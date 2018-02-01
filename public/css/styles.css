@@ -48,9 +48,40 @@ table {
 .card {
   background-color: #FFF5E6;
   padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 #viewCart {
   text-align: center;
+  margin-top: 30px;
+}
+
+.swatch img {
+  margin: 10px;
+}
+
+.swatch figcaption {
+  text-align: center;
+  font-size: 0.75em;
+}
+
+#swatches {
+  padding: 20px;
+}
+
+#swatches p {
+  text-align: center;
+}
+
+#swatches .row {
+  margin: auto;
+}
+
+#design figcaption {
+  font-size: 0.85em;
+}
+
+#addShirtToCart {
   margin-top: 30px;
 }

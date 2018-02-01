@@ -12,48 +12,116 @@
 
     <div class="header">
       <h4>Megaband T-shirt Order Form</h4>
-      <p>(All t-shirts must be picked up at the dance.)</p>
+      <p class="card">
+        Order deadline is February 14.<br>
+        Shirts available by online order only.<br>
+        All shirts must be picked up at the dance.
+      </p>
 
-      <figure>
+      <figure id="design">
         <img src="/images/megaband_shirt_2018.jpg" width="300"></img>
         <figcaption>Megaband 2018 T-shirt Design</figcaption>
       </figure>
     </div>
-    <p>Please choose size / style / color below and then click the "Add to Cart" button.</p>
 
-    <p>If you want to order multiple t-shirts with different sizes / styles / colors, from the shopping cart you can click "Continue shopping" to return to this page and select an additional size / style / color option.</p>
+    <div class="card" id="swatches">
+      <p>
+        Colors for style <em>Bayside 5100</em> (&ldquo;unisex t-shirt&rdquo;)<br>
+        (<a href="/images/Bayside5100.pdf" target=_blank>view size chart</a>)
+      </p>
+      <div class="row">
+        <figure class="swatch">
+          <img src="/images/carolina_blue_sample.jpg">
+          <figcaption>carolina blue</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/lime_green_sample.jpg">
+          <figcaption>lime green</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/charcoal_sample.jpg">
+          <figcaption>charcoal</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/gold_sample.jpg">
+          <figcaption>gold</figcaption>
+        </figure>
+      </div>
+      <hr>
+      <p>
+        Colors for style <em>Bayside 3325</em> (&ldquo;women's t-shirt&rdquo;)<br>
+        (<a href="/images/Bayside3325.pdf" target=_blank>view size chart</a>)
+      </p>
+      <div class="row">
+        <figure class="swatch">
+          <img src="/images/carolina_blue_sample.jpg">
+          <figcaption>carolina blue</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/lime_green_sample.jpg">
+          <figcaption>lime green</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/purple_sample.jpg">
+          <figcaption>purple</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/teal_sample.jpg">
+          <figcaption>teal</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <p>Please choose style / size / color below and then click the "Add to Cart" button.</p>
+
+    <p>If you want to order multiple t-shirts with different styles / sizes / colors, from the shopping cart you can click "Continue shopping" to return to this page and select an additional style / size / color option.</p>
 
     <div class="card" id="tshirtAddToCart">
       <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post">
         <input type="hidden" name="cmd" value="_s-xclick">
         <input type="hidden" name="hosted_button_id" value="GPXCJ6BKX678L">
         <table>
-          <tr class="label"><td><input type="hidden" name="on2" value="Name">Name</td></tr>
-          <tr><td><input type="text" name="os2" maxlength="200" size=35 required=true></td></tr>
+
+          <tr class="label"><td><input type="hidden" name="on3" value="Name">Name</td></tr>
+          <tr><td><input type="text" name="os3" maxlength="200" size=35 required=true></td></tr>
+
           <tr><td>&nbsp;</td></tr>
-          <tr class="label"><td><input type="hidden" name="on0" value="Color">Color</td></tr>
+
+          <tr class="label"><td><input type="hidden" name="on0" value="Style">Style</td></tr>
           <tr><td>
-            <select name="os0">
-            	<option value="Color 1">Color 1 </option>
-            	<option value="Color 2">Color 2 </option>
-            	<option value="Color 3">Color 3 </option>
-              </select>
+            <select id="shirtStyle" name="os0">
+            	<option value="5100">5100 ("unisex t-shirt") </option>
+            	<option value="3325">3325 ("women's t-shirt") </option>
+            </select>
           </td></tr>
+
           <tr><td>&nbsp;</td></tr>
+
           <tr class="label"><td><input type="hidden" name="on1" value="Size">Size</td></tr>
           <tr><td>
             <select name="os1">
-            	<option value="XS">XS </option>
-            	<option value="S">S </option>
-            	<option value="M">M </option>
+              <option value="M">M </option>
             	<option value="L">L </option>
             	<option value="XL">XL </option>
+            	<option value="2XL">2XL </option>
             </select>
           </td></tr>
+
           <tr><td>&nbsp;</td></tr>
+
+          <tr class="label"><td><input type="hidden" name="on2" value="Color">Color</td></tr>
+          <tr><td>
+            <select id="colors"name="os2">
+            	<option value="carolina blue">carolina blue </option>
+            	<option value="lime green">lime green </option>
+              <option value="charcoal">charcoal </option>
+            	<option value="gold">gold </option>
+            </select>
+          </td></tr>
+
         </table>
 
-        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" class="button" alt="Add to Cart">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" class="button" id="addShirtToCart" alt="Add to Cart">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>
     </div>
