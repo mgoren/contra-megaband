@@ -33,6 +33,6 @@ $(document).ready(function() {
   });
 });
 
-var colors_5100 = ["charcoal", "gold", "carolina_blue", "lime_green"];
-var colors_3325 = ["purple", "teal", "carolina_blue", "lime_green"];
-var colors_6100 = ["sand", "charcoal", "lime_green"];
+var colors_5100 = ["charcoal", "gold", "carolina blue", "lime green"];
+var colors_3325 = ["purple", "teal", "carolina blue", "lime green"];
+var colors_6100 = ["sand", "charcoal", "lime green"];
