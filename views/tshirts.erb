@@ -22,7 +22,8 @@
     <div class="header">
       <h4>Megaband T-shirt Order Form</h4>
       <p class="card">
-        The price is $20 each.<br>
+        Short sleeve shirts are $20.<br>
+        Long sleeve shirts are $30.<br>
         Order deadline is February 14.<br>
         Shirts available by online order only.<br>
         All shirts must be picked up at the dance.<br>
@@ -37,18 +38,10 @@
 
     <div class="card" id="swatches">
       <p>
-        Colors for style <em>Bayside 5100</em> (&ldquo;unisex t-shirt&rdquo;)<br>
+        Colors for style <em>Bayside 5100</em> (&ldquo;unisex t-shirt&rdquo;) - $20<br>
         (<strong><a href="/images/Bayside5100.pdf" target=_blank>style guide & size chart</a></strong>)
       </p>
       <div class="row">
-        <figure class="swatch">
-          <img src="/images/carolina_blue_sample.jpg">
-          <figcaption>carolina blue</figcaption>
-        </figure>
-        <figure class="swatch">
-          <img src="/images/lime_green_sample.jpg">
-          <figcaption>lime green</figcaption>
-        </figure>
         <figure class="swatch">
           <img src="/images/charcoal_sample.jpg">
           <figcaption>charcoal</figcaption>
@@ -57,13 +50,6 @@
           <img src="/images/gold_sample.jpg">
           <figcaption>gold</figcaption>
         </figure>
-      </div>
-      <hr>
-      <p>
-        Colors for style <em>Bayside 3325</em> (&ldquo;women's t-shirt&rdquo;)<br>
-        (<strong><a href="/images/Bayside3325.pdf" target=_blank>style guide & size chart</a></strong>)
-      </p>
-      <div class="row">
         <figure class="swatch">
           <img src="/images/carolina_blue_sample.jpg">
           <figcaption>carolina blue</figcaption>
@@ -72,6 +58,13 @@
           <img src="/images/lime_green_sample.jpg">
           <figcaption>lime green</figcaption>
         </figure>
+      </div>
+      <hr>
+      <p>
+        Colors for style <em>Bayside 3325</em> (&ldquo;women's t-shirt&rdquo;) - $20<br>
+        (<strong><a href="/images/Bayside3325.pdf" target=_blank>style guide & size chart</a></strong>)
+      </p>
+      <div class="row">
         <figure class="swatch">
           <img src="/images/purple_sample.jpg">
           <figcaption>purple</figcaption>
@@ -79,6 +72,33 @@
         <figure class="swatch">
           <img src="/images/teal_sample.jpg">
           <figcaption>teal</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/carolina_blue_sample.jpg">
+          <figcaption>carolina blue</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/lime_green_sample.jpg">
+          <figcaption>lime green</figcaption>
+        </figure>
+      </div>
+      <hr>
+      <p>
+        Colors for style <em>Bayside 6100</em> (&ldquo;unisex long sleeve&rdquo;) - $30<br>
+        (<strong><a href="/images/Bayside6100.pdf" target=_blank>style guide & size chart</a></strong>)
+      </p>
+      <div class="row">
+        <figure class="swatch">
+          <img src="/images/sand_sample.jpg">
+          <figcaption>sand</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/charcoal_sample.jpg">
+          <figcaption>charcoal</figcaption>
+        </figure>
+        <figure class="swatch">
+          <img src="/images/lime_green_sample.jpg">
+          <figcaption>lime green</figcaption>
         </figure>
       </div>
     </div>
@@ -101,8 +121,9 @@
           <tr class="label"><td><input type="hidden" name="on0" value="Style">Style</td></tr>
           <tr><td>
             <select id="shirtStyle" name="os0">
-            	<option value="5100">5100 ("unisex t-shirt") </option>
-            	<option value="3325">3325 ("women's t-shirt") </option>
+            	<option value="5100">5100 ("unisex t-shirt") - $20 </option>
+            	<option value="3325">3325 ("women's t-shirt") - $20 </option>
+            	<option value="6100">6100 ("long sleeve") - $30 </option>
             </select>
           </td></tr>
 
@@ -123,15 +144,16 @@
           <tr class="label"><td><input type="hidden" name="on2" value="Color">Color</td></tr>
           <tr><td>
             <select id="colors"name="os2">
+              <option value="charcoal">charcoal </option>
+              <option value="gold">gold </option>
             	<option value="carolina blue">carolina blue </option>
             	<option value="lime green">lime green </option>
-              <option value="charcoal">charcoal </option>
-            	<option value="gold">gold </option>
             </select>
           </td></tr>
 
         </table>
 
+        <input type="hidden" name="currency_code" value="USD">
         <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_cart_LG.gif" border="0" name="submit" class="button" id="addShirtToCart" alt="Add to Cart">
         <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
       </form>

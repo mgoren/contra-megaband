@@ -12,18 +12,24 @@ $(document).ready(function() {
   $("select#shirtStyle").on('change', function() {
     var selected = $(this).val();
     if (selected === '3325') {
-      $("select#colors option[value='charcoal']").remove()
-      $("select#colors option[value='gold']").remove()
-      $("select#colors").append(new Option("purple", "purple"))
-      $("select#colors").append(new Option("teal", "teal"))
+      $("select#colors").empty();
+      colors_3325.forEach(function(color) {
+        $("select#colors").append(new Option(color, color))
+      });
     } else if (selected === '5100') {
-      $("select#colors option[value='purple']").remove()
-      $("select#colors option[value='teal']").remove()
-      $("select#colors").append(new Option("charcoal", "charcoal"))
-      $("select#colors").append(new Option("gold", "gold"))
+      $("select#colors").empty();
+      colors_5100.forEach(function(color) {
+        $("select#colors").append(new Option(color, color))
+      });
+    } else if (selected === '6100') {
+      $("select#colors").empty();
+      colors_6100.forEach(function(color) {
+        $("select#colors").append(new Option(color, color))
+      });
     }
   });
 });
 
-// var colors_5100 = {"charcoal", "gold", "carolina blue", "lime green"};
-// var colors_3325 = {"purple", "teal", "carolina blue", "lime green"};
+var colors_5100 = ["charcoal", "gold", "carolina_blue", "lime_green"];
+var colors_3325 = ["purple", "teal", "carolina_blue", "lime_green"];
+var colors_6100 = ["sand", "charcoal", "lime_green"];
