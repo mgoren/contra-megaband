@@ -14,17 +14,20 @@ $(document).ready(function() {
     if (selected === '3325') {
       $("select#colors").empty();
       colors_3325.forEach(function(color) {
-        $("select#colors").append(new Option(color, color))
+        $("select#colors").append(new Option(color, color));
       });
+      $("select#size").prepend(new Option('XS','XS'));
     } else if (selected === '5100') {
       $("select#colors").empty();
+      $("select#size option[value='XS']").remove();
       colors_5100.forEach(function(color) {
-        $("select#colors").append(new Option(color, color))
+        $("select#colors").append(new Option(color, color));
       });
     } else if (selected === '6100') {
       $("select#colors").empty();
+      $("select#size option[value='XS']").remove();
       colors_6100.forEach(function(color) {
-        $("select#colors").append(new Option(color, color))
+        $("select#colors").append(new Option(color, color));
       });
     }
   });
