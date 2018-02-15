@@ -33,9 +33,9 @@ get '/soldout' do
 end
 
 get '/tshirts' do
-  erb :tshirts
+  erb :tshirt_sale_done
 end
 
 get '/tshirts/' do
-  erb :tshirts
+  erb :tshirt_sale_done
 end
